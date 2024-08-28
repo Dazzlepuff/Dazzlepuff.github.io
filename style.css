@@ -29,8 +29,35 @@ h2 {
     color: #333;
 }
 
-.project {
-    margin-bottom: 20px;
+.projects-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.project-card {
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-card h3 {
+    margin: 10px 0 5px;
+}
+
+.project-card p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #777;
 }
 
 footer {
