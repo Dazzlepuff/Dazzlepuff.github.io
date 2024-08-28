@@ -36,6 +36,15 @@ h2 {
     padding: 10px 0;
 }
 
+.projects-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
 .project-card {
     min-width: 200px;
     background-color: #fff;
