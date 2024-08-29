@@ -97,14 +97,14 @@ h2 {
     color: #777;
 }
 
-.footer {
+footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
 }
 
-/* New background style for a specific section */
+/* New background style for the projects section */
 .special-section {
     background: linear-gradient(135deg, #f4f4f4, #eaeaea);
     position: relative;
