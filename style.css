@@ -31,10 +31,11 @@ h2 {
 
 .projects-container {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px 0;
-}
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* Optional: for snapping effect */
+    gap: 20px; /* Optional: space between project cards */
+    padding-bottom: 10px; /* Optional: padding to ensure visibility of scroll bar */
+    }
 
 .projects-container::-webkit-scrollbar {
     height: 8px;
@@ -46,12 +47,9 @@ h2 {
 }
 
 .project-card {
-    flex: 0 0 auto;
-    width: 200px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    min-width: 200px; /* Set a minimum width for each project card */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    scroll-snap-align: start; /* Optional: for snapping effect */
 }
 
 .project-card img {
