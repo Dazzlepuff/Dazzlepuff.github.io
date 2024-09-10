@@ -1,26 +1,26 @@
-<!-- index.html -->
+    <!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-  <div id="navbar"></div> <!-- Placeholder for navbar -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Owen Chilson's Portfolio</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
 
-  <main>
-    <h1>Welcome to my portfolio!</h1>
-  </main>
-
-  <script>
-    // Load the navbar dynamically
-    fetch('/partials/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar').innerHTML = data;
-      });
-  </script>
-</body>
+    <body>
+        <div class="hero">
+            <div class="navbar">
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+                <div>Four</div>
+                <div>Five</div>
+            </div>
+            <div class="heading-wrapper w-container">
+                <h1 class="main-heading">Hello my name is Owen Chilson.</h1>
+                <h2 class="sub-heading">I build data collection tools and cybersecurity programs.</h2>
+            </div>
+        </div>
+    </body>
 </html>
