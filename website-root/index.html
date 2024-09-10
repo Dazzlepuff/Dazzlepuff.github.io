@@ -1,21 +1,26 @@
-<!-- index.html (or any page) -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-  <!-- Include the navigation bar -->
-  <?php include 'partials/navbar.html'; ?>
+  <div id="navbar"></div> <!-- Placeholder for navbar -->
 
   <main>
-    <!-- Content of the page goes here -->
     <h1>Welcome to my portfolio!</h1>
   </main>
 
+  <script>
+    // Load the navbar dynamically
+    fetch('/partials/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
 </body>
 </html>
