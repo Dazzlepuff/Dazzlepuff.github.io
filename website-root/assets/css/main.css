@@ -15,13 +15,21 @@ body {
   }
 
 .hero {
-    background-image: linear-gradient( #00000000, #00000000, #1c1c1a), url('../images/Flowers.jpg');
+    background-image: linear-gradient( #1c1c1a50, #1c1c1a), url('../images/Flowers.jpg');
     background-size: auto, cover;
     background-position: top center;
     background-repeat: repeat, no-repeat;
     margin: 0;
     padding: 0;
     padding-bottom: 200px;
+}
+
+.section {
+    background-color: #1c1c1a;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .heading-wrapper {
@@ -58,10 +66,53 @@ body {
     line-height: 53px;
 }
 
+.section-title {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0px 10% 0px;
+}
+
+.project-item {
+    background: #ebf4df;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h4 {
+    margin: 10px 0 0;
+}
+
+.project-item p {
+    margin: 5px 0;
+}
+
 h1{
     font-family: Garamond, sans-serif;
 }
 
 h2{
+    font-family: Garamond, sans-serif;
+}
+
+h3{
     font-family: Garamond, sans-serif;
 }
