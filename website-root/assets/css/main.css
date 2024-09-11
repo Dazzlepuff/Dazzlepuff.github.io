@@ -76,6 +76,15 @@ body {
     padding-bottom: 200px;
 }
 
+.flower-mask {
+    -webkit-mask-image: url('../images/FlowerMask.svg');
+    mask-image: url('../images/FlowerMask.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
 .section {
     background-color: #1c1c1a;
     margin: 0;
