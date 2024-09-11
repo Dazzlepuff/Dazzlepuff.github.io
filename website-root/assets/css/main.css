@@ -77,8 +77,8 @@ body {
 }
 
 .flower-mask {
-    -webkit-mask-image: url('../images/FlowerMask.svg');
-    mask-image: url('../images/github-icon.png');
+    -webkit-mask-image: url('../images/FlowerMask.png');
+    mask-image: url('../images/FlowerMask.png');
     -webkit-mask-size: cover;
     mask-size: cover;
     width: 200px;
