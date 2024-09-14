@@ -66,6 +66,7 @@ body {
     padding: 0;
   }
 
+  /*
 .hero {
     background-image: linear-gradient( #1c1c1a30, #1c1c1a), url('../images/Flowers.jpg');
     background-size: auto, cover;
@@ -75,6 +76,37 @@ body {
     padding: 0;
     padding-bottom: 200px;
 }
+    */
+
+.hero {
+    /* First background (with gradient and Flowers.jpg on top) */
+    background-image: 
+        linear-gradient(#1c1c1a30, #1c1c1a), 
+        url('../images/Flowers.jpg');
+    
+    /* Second background (FlowersInverted.jpg) behind the mask */
+    background-image: 
+        linear-gradient(#1c1c1a30, #1c1c1a), 
+        url('../images/Flowers.jpg'), 
+        url('../images/FlowersInverted.jpg');
+    
+    background-size: auto, cover, cover; /* Adjust sizes */
+    background-position: top center, top center, top center; /* Align all backgrounds */
+    background-repeat: repeat, no-repeat, no-repeat; /* Repeat first, no repeat for others */
+    
+    /* Mask setup */
+    -webkit-mask-image: url('../images/FlowerMask.png'); /* Masking using your mask image */
+    mask-image: url('../images/FlowerMask.png');
+    
+    -webkit-mask-size: cover; /* Adjust mask size */
+    mask-size: cover;
+
+    /* Other styles */
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200px;
+}
+    
 
 .flower-mask {
     -webkit-mask-image: url('../images/FlowerMask.png');
