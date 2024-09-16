@@ -66,31 +66,20 @@ body {
     padding: 0;
   }
 
-  /*
 .hero {
-    background-image: linear-gradient( #1c1c1a30, #1c1c1a), url('../images/Flowers.jpg');
-    background-size: auto, cover;
-    background-position: top center;
-    background-repeat: repeat, no-repeat;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 200px;
-}
-    */
-
-.hero {
-    /* First background (with gradient and Flowers.jpg on top) */
     background-image: 
-        linear-gradient(#1c1c1a30, #1c1c1a), 
+        linear-gradient(#1c1c1a10, #1c1c1a), 
         url('../images/Flowers.jpg');
+
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
     
-    /* Apply mask only to the second background */
     position: relative;
     z-index: 1;
-    -webkit-mask-image: none; /* Disable mask on first background */
+    -webkit-mask-image: none;
     mask-image: none;
 
-    /* Add second background with mask in a pseudo-element */
     &::before {
         content: "";
         position: absolute;
@@ -99,28 +88,33 @@ body {
         right: 0;
         bottom: 0;
         
-        /* Second background (FlowersInverted.jpg) behind the mask */
-        background-image: url('../images/FlowersInverted.jpg');
+        background-image: 
+            /*linear-gradient(#e3e3e530, #e3e3e5), */
+            linear-gradient(#1c1c1a10, #1c1c1a), 
+            url('../images/FlowersInverted.jpg');
         background-size: cover;
         background-position: top center;
         background-repeat: no-repeat;
 
-        /* Apply the mask here */
         -webkit-mask-image: url('../images/FlowerMask.png');
         mask-image: url('../images/FlowerMask.png');
-        -webkit-mask-size: cover;
-        mask-size: cover;
+        -webkit-mask-size: 40%;
+        mask-size: 40%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: var(--scroll) 50%;
+        mask-position: var(--scroll) 50%;
+        transition: mask-position 0.1s ease, -webkit-mask-position 0.1s ease;
 
-        z-index: -1; /* Make sure it's behind the main background */
+        z-index: -1;
     }
 
-    /* Other styles */
     margin: 0;
     padding: 0;
     padding-bottom: 200px;
 }
     
-
+/*
 .flower-mask {
     -webkit-mask-image: url('../images/FlowerMask.png');
     mask-image: url('../images/FlowerMask.png');
@@ -129,6 +123,7 @@ body {
     width: 200px;
     height: 200px;
 }
+    */
 
 .section {
     background-color: #1c1c1a;
