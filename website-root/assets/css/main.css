@@ -23,10 +23,29 @@
     display: flex;
 }
 
-.icon{
-    max-width: 40px;
-    max-height: 40px;
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     padding: 0 10px 0;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.linkedin-icon {
+    background-color: #1c1c1a; /* Default color for LinkedIn */
+    mask-image: url('../images/linkedin-icon.png');
+    -webkit-mask-image: url('../images/linkedin-icon.png');
+}
+
+.github-icon {
+    background-color: #1c1c1a; /* Default color for GitHub */
+    mask-image: url('../images/github-icon.png');
+    -webkit-mask-image: url('../images/github-icon.png');
 }
 
 .icon:hover{
@@ -38,9 +57,10 @@
     display: flex;
 }
 
-.text-links > div{
+.text-links > a{
     padding: 10px 20px 0;
     justify-content: center;
+    text-decoration: none;
 }
 
 .fade-text{

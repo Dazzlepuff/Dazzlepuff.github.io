@@ -1,0 +1,120 @@
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1c1c1a;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #ebf4df; 
+  }
+
+.navbar {
+    padding: 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-links{
+    padding: 20px 0;
+    display: flex;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px 0;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+.linkedin-icon {
+    background-color: #ebf4df; /* Default color for LinkedIn */
+    mask-image: url('../../assets/images/linkedin-icon.png');
+    -webkit-mask-image: url('../../assets/images/linkedin-icon.png');
+}
+
+.github-icon {
+    background-color: #ebf4df; /* Default color for GitHub */
+    mask-image: url('../../assets/images/github-icon.png');
+    -webkit-mask-image: url('../../assets/images/github-icon.png');
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.text-links{
+    padding: 20px;
+    display: flex;
+}
+
+.text-links > a{
+    padding: 10px 20px 0;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.fade-text{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 7px;    
+    text-transform: none;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.3s;
+}
+
+.fade-text:hover{
+    color: #777;
+    cursor: pointer;
+    
+}
+
+body {
+    background-color: #1c1c1a;
+    margin: 0;
+    padding: 0;
+  }
+
+.html {
+    background-color: #e34c26;
+}
+
+.css {
+    background-color: #563d7c;
+}
+
+.javascript {
+    background-color: #f1e05a;
+}
+
+.python {
+    background-color: #3572A5;
+}
+
+h1{
+    font-family: Garamond, sans-serif;
+}
+
+h2{
+    font-family: Garamond, sans-serif;
+}
+
+h3{
+    font-family: Garamond, sans-serif;
+}
+
+h4{
+    font-family: Garamond, sans-serif;
+}
